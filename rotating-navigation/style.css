@@ -12,7 +12,7 @@ body {
     margin: 0;
 }
 
-.container {
+.content-container {
     background-color: #fafafa;
     transform-origin: top left;
     transition: transform 0.5s linear;
@@ -21,7 +21,7 @@ body {
     padding: 50px;
 }
 
-.container.show-nav {
+.container.show-nav .content-container {
     transform: rotate(-20deg);
 }
 
@@ -29,6 +29,7 @@ body {
     position: fixed;
     top: -100px;
     left: -100px;
+    z-index: 100;
 }
 
 .circle {
@@ -40,8 +41,8 @@ body {
     transition: transform 0.5s linear;
 }
 
-.container.show-nav .circle {
-    transform: rotate(-70deg);
+.container.show-nav .circle-container .circle {
+    transform: rotate(-90deg);
 }
 
 .circle button {
