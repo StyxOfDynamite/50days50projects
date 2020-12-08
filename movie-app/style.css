@@ -98,9 +98,14 @@ main {
     left: 0;
     right: 0;
     bottom: 0;
-    max-height: 100%;
+    max-height: 50%;
+    overflow: scroll;
     transform: translateY(101%);
     transition: transform 0.3s ease-in;
+}
+
+.overview::-webkit-scrollbar {
+    display: none;
 }
 
 .movie:hover .overview {
