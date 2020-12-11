@@ -21,7 +21,7 @@ const changeFavicon = (emoji) => {
 };
 
 const cycleEmoji = (index) => {
-    changeFavicon(emojis[index % emojis.length]);
+    changeFavicon(emojis[Math.floor(index % emojis.length)]);
 };
 
 window.addEventListener('scroll', scrollEmoji);
