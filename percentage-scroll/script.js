@@ -1,5 +1,5 @@
 const faviconHref = (value) => {
-    return `data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22256%22 height=%22256%22 viewBox=%220 0 75 75 %22 fill=%22black%22><text x=%2250%%22 y=%2250%%22 dominant-baseline=%22central%22 text-anchor=%22middle%22 font-size=%2258%22>${value}</text></svg>`;
+    return `data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22256%22 height=%22256%22 viewBox=%220 0 75 75 %22 fill=%22white%22><text x=%2250%%22 y=%2250%%22 dominant-baseline=%22central%22 text-anchor=%22middle%22 font-size=%2258%22 stroke=%22black%22 fill=%22white%22>${value}</text></svg>`;
 };
 
 const changeFavicon = (favicon) => {
