@@ -38,7 +38,7 @@ const calculateScroll = () => {
 
     percentage = Math.round(percentage);
 
-    setValue(percentage);
+    changeFavicon(percentage);
 };
 
 window.addEventListener('scroll', calculateScroll);
