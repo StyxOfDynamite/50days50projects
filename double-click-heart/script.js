@@ -11,7 +11,6 @@ loveMe.addEventListener('click', (e) => {
         if (new Date().getTime() - clickTime < 800) {
             createHeart(e);
             clickTime = 0;
-            timesClicked++;
         } else {
             clickTime = new Date().getTime();
         }
@@ -36,7 +35,7 @@ const createHeart = (event) => {
     heart.style.left = `${xInside}px`;
 
     loveMe.appendChild(heart);
-    times.innerHTML = timesClicked;
+    times.innerHTML = ++timesClicked;
 
     setTimeout(() => heart.remove(), 1000);
 };
