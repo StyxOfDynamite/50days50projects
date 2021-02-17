@@ -56,6 +56,7 @@ h1 {
 }
 
 .item a {
+    color: inherit;
     display: block;
     height: 100%;
     text-align: center;
